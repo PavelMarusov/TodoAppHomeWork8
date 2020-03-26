@@ -113,7 +113,7 @@ public class FormActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 100 && resultCode == RESULT_OK) {
             image_uri = data.getData();
-            upload_image(data.getData());
+//            upload_image(data.getData());
             Log.e("ololo", "onActivityResult: " + data.getData() );
             Glide.with(this).load(data.getData()).into(imageView);
         }
@@ -125,6 +125,13 @@ public class FormActivity extends AppCompatActivity {
                 FirebaseStorage.getInstance().getReference().child("avatars/" + userId);
         final UploadTask task = storageReference.putFile(image_uri);
 
+        task.addOnCompleteListener(new OnCompleteListener<UploadTask.TaskSnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<UploadTask.TaskSnapshot> task) {
+                editor.putString("uri", String.valueOf(data));
+                editor.apply();
+            }
+        });
     }
 }
 

@@ -98,14 +98,6 @@ public class FirebaseFragment extends Fragment {
 
         });
 
-        StorageReference storage = FirebaseStorage.getInstance().getReference();
-
-/*        storage.child("avatars/" + userId).getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-            @Override
-            public void onSuccess(Uri uri) {
-            //    Glide.with(ProfileActivity.this).load(uri).circleCrop().into(imageView);
-            }
-        });*/
     }
 
     @Override
