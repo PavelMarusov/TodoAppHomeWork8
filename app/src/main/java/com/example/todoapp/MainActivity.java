@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-/*        boolean isShow = Prefs.getInstance(this).isShown();
+     boolean isShow = Prefs.getInstance(this).isShown();
         if (!isShow) {
             startActivity(new Intent(this, OnBoardActivity.class));
             finish();
@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(this,PhoneActivity.class));
             finish();
             return;
-        }*/
+        }
         setContentView(R.layout.activity_main);
 
         Toolbar toolbar = findViewById(R.id.toolbar);

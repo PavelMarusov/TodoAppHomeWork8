@@ -122,16 +122,15 @@ public class FormActivity extends AppCompatActivity {
     private void upload_image(final Uri data) {
         String userId = FirebaseAuth.getInstance().getUid();
         StorageReference storageReference =
-                FirebaseStorage.getInstance().getReference().child("avatars/" + userId);
-        final UploadTask task = storageReference.putFile(image_uri);
-
-        task.addOnCompleteListener(new OnCompleteListener<UploadTask.TaskSnapshot>() {
-            @Override
-            public void onComplete(@NonNull Task<UploadTask.TaskSnapshot> task) {
-                editor.putString("uri", String.valueOf(data));
-                editor.apply();
-            }
-        });
+                FirebaseStorage.getInstance().getReference().child("storage/" + userId);
+//        final UploadTask task = storageReference.putFile(image_uri);
+//        task.addOnCompleteListener(new OnCompleteListener<UploadTask.TaskSnapshot>() {
+//            @Override
+//            public void onComplete(@NonNull Task<UploadTask.TaskSnapshot> task) {
+//                editor.putString("uri", String.valueOf(data));
+//                editor.apply();
+//            }
+//        });
     }
 }
 
