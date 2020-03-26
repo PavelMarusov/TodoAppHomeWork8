@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">TodoApp</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Marusov Pavel</string>
+    <string name="nav_header_subtitle">pavelmarusovs@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Delete</string>
+
+    <string name="menu_home">Задачи</string>
+    <string name="menu_gallery">Имена</string>
+    <string name="menu_slideshow">Заметки</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="menu_firebase">Firebase</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

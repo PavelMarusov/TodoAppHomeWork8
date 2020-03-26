@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/text_size"
+        android:orderInCategory="100"
+        android:title="Text size"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/uploads"
+        android:orderInCategory="100"
+        android:title="Загрузки"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/sing_out"
+        android:orderInCategory="100"
+        android:title="Выход"
+        app:showAsAction="never" />
+
+</menu>
